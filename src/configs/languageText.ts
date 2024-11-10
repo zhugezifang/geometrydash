@@ -5,8 +5,6 @@ export const getNavMenu = async () => {
   return {
     name2: navMenuIndex('name2'),
     href2: navMenuIndex('href2'),
-    name3: navMenuIndex('name3'),
-    href3: navMenuIndex('href3'),
   };
 }
 
@@ -19,7 +17,7 @@ export const getIndexLanguageText = async () => {
     pDescription: tIndex('pDescription'),
     img_h2: tIndex('img_h2'),
     level_h2:tIndex('level_h2'),
-    more_level:tIndex('more_level')
+    contact_h2:tIndex('contact_h2'),
   };
 }
 
@@ -98,13 +96,9 @@ export const getPlayInfoLanguageText = async () => {
   const tIndexQuestion = await getTranslations('playInfos');
   return {
     h2_0: tIndexQuestion('h2_0'),
-    h2_1: tIndexQuestion('h2_1'),
     h2_1_p1: tIndexQuestion('h2_1_p1'),
-    h2_2: tIndexQuestion('h2_2'),
     h2_2_p1: tIndexQuestion('h2_2_p1'),
-    h2_3: tIndexQuestion('h2_3'),
     h2_3_p1: tIndexQuestion('h2_3_p1'),
-    h2_4: tIndexQuestion('h2_4'),
     h2_4_p1: tIndexQuestion('h2_4_p1'),
   }
 }

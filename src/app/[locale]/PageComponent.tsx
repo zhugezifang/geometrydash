@@ -133,85 +133,50 @@ const PageComponent = ({
                 <ImageSplitter locale={locale} indexLanguageText={indexLanguageText}/>
             </div>
 
-            <section id="how-it-works" className="py-16 bg-gray-50">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">{indexPlayInfoText.h2_0}</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="flex justify-center mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-play w-12 h-12 text-indigo-600">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polygon points="10 8 16 12 10 16 10 8"></polygon>
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_1}</h3>
-                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_1_p1}</p></div>
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="flex justify-center mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-mouse-pointer w-12 h-12 text-indigo-600">
-                        <path d="M12.586 12.586 19 19"></path>
-                        <path d="M3.688 3.037a.497.497 0 0 0-.651.651l6.5 15.999a.501.501 0 0 0 .947-.062l1.569-6.083a2 2 0 0 1 1.448-1.479l6.124-1.579a.5.5 0 0 0 .063-.947z"></path>
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_2}</h3>
-                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_2_p1}</p></div>
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="flex justify-center mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move w-12 h-12 text-indigo-600">
-                        <path d="M12 2v20"></path>
-                        <path d="m15 19-3 3-3-3"></path>
-                        <path d="m19 9 3 3-3 3"></path>
-                        <path d="M2 12h20"></path>
-                        <path d="m5 9-3 3 3 3"></path>
-                        <path d="m9 5 3-3 3 3"></path>
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_3}</h3>
-                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_3_p1}</p></div>
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="flex justify-center mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-circle-check-big w-12 h-12 text-indigo-600">
-                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
-                        <path d="m9 11 3 3L22 4"></path>
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{indexPlayInfoText.h2_4}</h3>
-                    <p className="text-gray-600 text-center">{indexPlayInfoText.h2_4_p1}</p></div>
-                </div>
+            <div className="rounded-lg border bg-card text-card-foreground h-full bg-indigo-50 from-blue-50 to-indigo-100 shadow-lg">
+              <div className="flex flex-col space-y-1.5 p-6 pb-2">
+                <h2 className="text-2xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl text-center">{indexPlayInfoText.h2_0}</h2>
               </div>
-            </section>
+              <div className="p-6 pt-4">
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="inline-block w-6 h-6 mr-3 text-white bg-indigo-500 rounded-full flex items-center justify-center text-sm font-semibold">1</span>
+                    <span className="text-gray-700">{indexPlayInfoText.h2_1_p1}</span></li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-6 h-6 mr-3 text-white bg-indigo-500 rounded-full flex items-center justify-center text-sm font-semibold">2</span>
+                    <span className="text-gray-700">{indexPlayInfoText.h2_2_p1}</span></li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-6 h-6 mr-3 text-white bg-indigo-500 rounded-full flex items-center justify-center text-sm font-semibold">3</span>
+                    <span className="text-gray-700">{indexPlayInfoText.h2_3_p1}</span></li>
+                  <li className="flex items-start">
+                    <span className="inline-block w-6 h-6 mr-3 text-white bg-indigo-500 rounded-full flex items-center justify-center text-sm font-semibold">4</span>
+                    <span className="text-gray-700">{indexPlayInfoText.h2_4_p1}</span></li>
+                </ul>
+              </div>
+            </div>
 
             <div className="max-w-4xl mx-auto p-4">
               <h2 className="text-3xl font-semibold text-center mb-8">{indexLanguageText.img_h2}</h2>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4">
                 <div className="overflow-hidden rounded-lg shadow-lg">
-                  <img src="https://perfecttidygame.com/assets/images/perfect-tidy-006.webp" alt="Perfect Tidy Image 1" className="w-full h-auto object-cover"/>
+                  <img src="https://play-lh.googleusercontent.com/tr8F3wHLv-H_n0ZuXSmGbYRnfFp9cLbQ1ZMRE-m5vrW-YOM0aeCYnIfhBK6GyFh9pJk=w1052-h592-rw" alt="ジオメトリーダッシュ 写真 1" className="w-full h-auto object-cover"/>
                 </div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
-                  <img src="https://perfecttidygame.com/assets/images/perfect-tidy-002.webp" alt="Perfect Tidy Image 2" className="w-full h-auto object-cover"/>
+                  <img src="https://play-lh.googleusercontent.com/-Q0_MvAfKS5EliTc0d5IEbD1jygxyY8IC82d2UwGMNimpe6D77VcwOaFe9c407Slw8I=w1052-h592-rw" alt="ジオメトリーダッシュ 写真 2" className="w-full h-auto object-cover"/>
                 </div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
-                  <img src="https://perfecttidygame.com/assets/images/perfect-tidy-001.webp" alt="Perfect Tidy Image 3" className="w-full h-auto object-cover"/>
+                  <img src="https://play-lh.googleusercontent.com/iQNmj0V2spJ0hMH1ZxSJ8f_TiNhHvMTOF-x5pZDKP9zF2deZYhFMsifGIUKBM_N9LJI=w1052-h592-rw" alt="ジオメトリーダッシュ 写真 3" className="w-full h-auto object-cover"/>
                 </div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
-                  <img src="https://perfecttidygame.com/assets/images/perfect-tidy-005.webp" alt="Perfect Tidy Image 4" className="w-full h-auto object-cover"/>
+                  <img src="https://play-lh.googleusercontent.com/r-8__UNM6HvvkJ6YRKxsLFkqQWFE9lJGEdO6cowSPsdSWgkB9sp5TZUiAQ4V25CORV0=w1052-h592-rw" alt="ジオメトリーダッシュ 写真 4" className="w-full h-auto object-cover"/>
                 </div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
-                  <img src="https://perfecttidy.online/_next/image?url=%2Fimages%2Fperfect-tidy-carousel-1.webp&w=640&q=75" alt="Perfect Tidy Image 5" className="w-full h-auto object-cover"/>
+                  <img src="https://play-lh.googleusercontent.com/uoAwgH03jCS1uFHUZIJFlm7y45P3N3OqyJxLhUjiEuuLpnL5meBZr2jJUVjKv5BNoA=w1052-h592-rw" alt="ジオメトリーダッシュ 写真 5" className="w-full h-auto object-cover"/>
                 </div>
                 <div className="overflow-hidden rounded-lg shadow-lg">
-                  <img src="https://perfecttidy.online/_next/image?url=%2Fimages%2Fperfect-tidy-carousel-13.webp&w=640&q=75" alt="Perfect Tidy Image 6" className="w-full h-auto object-cover"/>
+                  <img src="https://play-lh.googleusercontent.com/h-hqQ2Ubx4hiWU0hw31SG96KZyJ_30v7Xuy4eyEd6oyK6jXkOnntYM9Urv11Vcsxb9bz=w1052-h592-rw" alt="ジオメトリーダッシュ 写真 6" className="w-full h-auto object-cover"/>
                 </div>
-
-                <div className="overflow-hidden rounded-lg shadow-lg">
-                  <img src="https://perfecttidy.online/_next/image?url=%2Fimages%2Fperfect-tidy-carousel-16.webp&w=640&q=75" alt="Gallery Image" className="w-full h-auto object-cover"/>
-                </div>
-
-                <div className="overflow-hidden rounded-lg shadow-lg">
-                  <img src="https://perfecttidy.online/_next/image?url=%2Fimages%2Fperfect-tidy-carousel-9.webp&w=640&q=75" alt="Gallery Image" className="w-full h-auto object-cover"/>
-                </div>
-
                 
               </div>
             </div>
@@ -219,30 +184,7 @@ const PageComponent = ({
             <section id="perfecttidylevel" className="bg-indigo-100 py-12">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-indigo-800 mb-8">{indexLanguageText.level_h2}</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
-                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
-                      1</p></div>
-                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
-                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
-                      2</p></div>
-                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
-                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
-                      3</p></div>
-                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
-                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
-                      4</p></div>
-                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
-                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
-                      5</p></div>
-                  <div className="bg-white p-2 rounded-lg shadow-md text-center">
-                    <p className="text-xs font-semibold text-indigo-600 whitespace-nowrap overflow-hidden text-ellipsis">Perfect Tidy Level
-                      6</p></div>
-                </div>
-                <div className="text-center mt-8">
-                  <a className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-indigo-700 transition duration-300" href={`/${locale}/perfect-tidy-walkthrough`}>{indexLanguageText.more_level}
-                  <span className="font-bold text-yellow-300">Lever 1 to 115</span></a>
-                </div>
+                <iframe width="1228" height="691" src="https://www.youtube.com/embed/5N1MrqjSois?si=OisvDii-EuaacK12" title="Perfect Tidy Walkthrough(攻略) Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
               </div>
             </section>
             
@@ -457,6 +399,15 @@ const PageComponent = ({
                 </div>
               </section>
             </div>
+
+
+            <div
+              className="mx-auto flex max-w-4xl flex-col items-center text-center pt-10">
+              <h2 className="mb-4 text-4xl font-bold md:text-4xl">{indexLanguageText.contact_h2}</h2>
+            </div>
+
+            <iframe src="https://tally.so/embed/3xN5Jy?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" style={{ width: '100%', height: '350px'}}></iframe>
+
 
           </div>
 
