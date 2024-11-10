@@ -56,10 +56,10 @@ export default function Header({
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href={`/${locale}`} className="-m-1.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
-            <Image className="h-8 w-auto" src="/favicon.svg" alt="Perfect Tidy" width={32} height={32}/>
+            <Image className="h-8 w-auto" src="/favicon.svg" alt="ジオメトリーダッシュ" width={32} height={32}/>
           </a>
           <a href={`/${locale}`} className="-m-1.5 ml-0.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
-            <span className="font-bold text-white text-2xl">Perfect Tidy</span>
+            <span className="font-bold text-white text-2xl">ジオメトリーダッシュ</span>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -97,49 +97,7 @@ export default function Header({
             </a>
           ))}
         </div>
-        <Menu as="div" className="relative inline-block text-left">
-          <div>
-            <Menu.Button
-              className="inline-flex w-full justify-center gap-x-1.5 border border-[rgba(255,255,255,0.5)] rounded-md px-3 py-2 text-sm font-semibold text-white hover:border-[rgba(255,255,255,0.9)]">
-              <GlobeAltIcon className="w-5 h-5 text-white"/>{locale == 'default' ? 'EN' : locale.toUpperCase()}
-              <ChevronDownIcon className="-mr-1 h-5 w-5 text-white" aria-hidden="true"/>
-            </Menu.Button>
-          </div>
-          <Transition
-            as={Fragment}
-            enter="transition ease-out duration-100"
-            enterFrom="transform opacity-0 scale-95"
-            enterTo="transform opacity-100 scale-100"
-            leave="transition ease-in duration-75"
-            leaveFrom="transform opacity-100 scale-100"
-            leaveTo="transform opacity-0 scale-95"
-          >
-            <Menu.Items
-              className="absolute right-0 z-10 mt-2 w-26 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div className="py-1">
-                {
-                  languages.map((item) => {
-                    let hrefValue = `/${item.lang}`;
-                    if (page) {
-                      hrefValue = `/${item.lang}/${page}`;
-                    }
-                    return (
-                      <Menu.Item key={item.lang}>
-                        <Link href={hrefValue} onClick={() => checkLocalAndLoading(item.lang)}>
-                              <span
-                                className={'text-gray-700 block px-4 py-2 text-sm hover:text-[#2d6ae0]'}
-                              >
-                                {item.language}
-                              </span>
-                        </Link>
-                      </Menu.Item>
-                    )
-                  })
-                }
-              </div>
-            </Menu.Items>
-          </Transition>
-        </Menu>
+        
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10"/>
