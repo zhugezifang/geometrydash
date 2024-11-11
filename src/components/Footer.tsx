@@ -28,7 +28,7 @@ export default function Footer({
                 src="/logo.webp"
                 width={32}
                 height={32}
-                alt="Image Splitter"
+                alt="ジオメトリーダッシュ"
               />
             </a>
             <p className="text-sm text-white">
