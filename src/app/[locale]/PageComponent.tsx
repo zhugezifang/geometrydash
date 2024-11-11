@@ -100,20 +100,6 @@ const PageComponent = ({
         locale={locale}
         page={""}
       />
-      <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-KBVHH6SP3N`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-KBVHH6SP3N');
-            `,
-          }}
-        />
       <Header locale={locale} navMenuText={navMenuText} indexLanguageText={indexLanguageText}/>
       <div>
         <div className="block overflow-hidden bg-cover bg-center text-black"
