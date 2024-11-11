@@ -1,5 +1,5 @@
-## Perfect Tidy——Free Online Game
+## ジオメトリーダッシュリズムゲーム
 
-Perfect Tidy is a soothing game that transforms everyday tidying into a delightful digital experience, offering a tranquil escape into organized bliss.
+ジオメトリーダッシュは、リズムゲームとアクションが融合した刺激的なゲームです。リズムに合わせてレベルをクリアし、楽しむことができます
 
-👉 [Perfect Tidy](https://perfect-tidy.online/)
+👉 [ジオメトリーダッシュ](https://geometrydashjp.online/)
