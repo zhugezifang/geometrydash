@@ -26,6 +26,7 @@ const PageComponent = ({
         indexLanguageText={indexLanguageText}
       />
       <main className="mx-auto w-full max-w-7xl px-5 mb-5">
+      <div className="p-6 prose mx-auto">
       <h1>Terms and Conditions</h1>
       <p>Last updated: November 11, 2024</p>
       <p>Please read these terms and conditions carefully before using Our Service.</p>
@@ -108,6 +109,7 @@ const PageComponent = ({
       <ul>
       <li>By email: xiaoqiu2017wy@gmail.com</li>
       </ul>
+      </div>
       </main>
       <Footer
         locale={locale}
