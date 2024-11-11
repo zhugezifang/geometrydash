@@ -25,7 +25,7 @@ export default function Footer({
             <a href={`/${locale}`}>
               <Image
                 className="h-10"
-                src="/favicon.svg"
+                src="/logo.webp"
                 width={32}
                 height={32}
                 alt="Image Splitter"
