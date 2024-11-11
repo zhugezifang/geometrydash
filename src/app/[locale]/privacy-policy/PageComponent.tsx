@@ -25,7 +25,7 @@ const PageComponent = ({
         indexLanguageText={indexLanguageText}
       />
       <main className="w-[95%] md:w-[65%] lg:w-[55%] 2xl:w-[45%] mx-auto h-full my-8">
-      <div className="p-6 prose mx-auto">
+      <div className="mx-auto w-full max-w-7xl px-5 mb-5">
         <h1>Privacy Policy</h1>
         <p>Last updated: November 11, 2024</p>
         <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
