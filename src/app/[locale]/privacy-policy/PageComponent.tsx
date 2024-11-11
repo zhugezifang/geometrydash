@@ -24,7 +24,7 @@ const PageComponent = ({
         page={'privacy-policy'}
         indexLanguageText={indexLanguageText}
       />
-      <main className="w-[95%] md:w-[65%] lg:w-[55%] 2xl:w-[45%] mx-auto h-full my-8" style={{ heigh: '6200px' }}>
+      <main className="w-[95%] md:w-[65%] lg:w-[55%] 2xl:w-[45%] mx-auto h-full my-8" style={{ height: '6200px' }}>
       <div className="mx-auto w-full max-w-7xl px-5 mb-5">
         <h1>Privacy Policy</h1>
         <p>Last updated: November 11, 2024</p>
