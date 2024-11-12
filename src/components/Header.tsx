@@ -110,10 +110,10 @@ export default function Header({
             <a href={`/${locale}`} className="-m-1.5 ml-0.5 p-1.5" onClick={() => setShowLoadingModal(true)}>
               <Image
                 className="h-8 w-auto"
-                src="/sorawebui.svg"
+                src="/logo.webp"
                 width={32}
                 height={24}
-                alt="sorawebui.com"/>
+                alt="ジオメトリーダッシュ"/>
             </a>
             <button
               type="button"
