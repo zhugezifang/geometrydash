@@ -170,7 +170,7 @@ const PageComponent = ({
             <section id="perfecttidylevel" className="bg-indigo-100 py-12">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-indigo-800 mb-8">{indexLanguageText.level_h2}</h2>
-                <iframe width="100%" height="691" src="https://www.youtube.com/embed/5N1MrqjSois?si=OisvDii-EuaacK12" title="Perfect Tidy Walkthrough(攻略) Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                <iframe width="100%" height="691" src="https://www.youtube.com/embed/5N1MrqjSois?si=OisvDii-EuaacK12" title="ジオメトリーダッシュ Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
               </div>
             </section>
             
