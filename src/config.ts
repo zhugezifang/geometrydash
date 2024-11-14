@@ -8,11 +8,6 @@ export const languages = [
     lang: "en",
     language: "English",
   },
-  {
-    code: "ko-KR",
-    lang: "ko",
-    language: "한국어",
-  }
 ]
 
 export const pathnames = {
