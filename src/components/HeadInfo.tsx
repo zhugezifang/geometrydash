@@ -9,6 +9,7 @@ const HeadInfo = ({
   return (
     <>
       <title>{title}</title>
+      <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6735da9df1297b00124e7f6c&product=sop' async='async'></script>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4158779929727637"
            crossOrigin="anonymous"></script> 
         <script
