@@ -46,7 +46,12 @@ export default function Footer({
               <div className="mt-10 md:mt-0">
                 <div className="text-sm font-semibold leading-6 text-white">Friends</div>
                 <ul role="list" className="mt-6 space-y-4">
-                        
+                        <li>
+                          <a href='https://templatejp.online/' target='_blank'
+                                className="text-sm leading-6 text-white ">
+                            無料のテンプレート
+                          </a>
+                        </li>
                 </ul>
               </div>
             </div>
